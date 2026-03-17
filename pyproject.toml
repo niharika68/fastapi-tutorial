@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "FastAPI Tutorial"
+authors = ["Niharika"]
+readme = "README.md"
+packages = [{include = "fastapi_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.135.1"
+uvicorn = {extras = ["standard"], version = "^0.42.0"}
+sqlalchemy = "^2.0.48"
+python-jose = {extras = ["cryptography"], version = "^3.5.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.22"
+bcrypt = "<4.0"
+psycopg2-binary = "^2.9.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
